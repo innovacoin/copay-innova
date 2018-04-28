@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "552069523319",
+    "firebase_url": "https://innova-copay.firebaseio.com",
+    "project_id": "innova-copay",
+    "storage_bucket": "innova-copay.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:552069523319:android:3b51e44565e5cc9a",
+        "android_client_info": {
+          "package_name": "info.innovacoin.copay"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "552069523319-9btd9ffv2b0pgqe5fga3oute4dg79iis.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDxUzL5o3ZgcUz31x-jLD59cJAOVfz40YU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

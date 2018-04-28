@@ -1,0 +1,36 @@
+<ion-view id="buy-and-sell" show-tabs>
+  <ion-nav-bar class="bar-royal">
+    <ion-nav-back-button>
+    </ion-nav-back-button>
+    <ion-nav-title>Buy or Sell Innova</ion-nav-title>
+  </ion-nav-bar>
+  <ion-content>
+    <div class="list">
+      <div class="explain">
+        <i class="icon buy-and-sell-icon">
+          <img src="img/app/coin-icon.png"/>
+        </i>
+        <div class="explain-heading">Connect an Exchange</div>
+        <div class="explain-description">Buy or sell innova on this exchanges.</div>
+      </div>
+      <div class="item item-divider"></div>
+      <!-- <div ng-repeat="service in services">
+        <div class="item item-icon-right" ui-sref="{{service.sref}}">
+            <img ng-src="{{service.logo}}" width="90">
+            <span class="item-note">{{service.location}}</span>
+            <i class="icon bp-arrow-right"></i>
+        </div>
+      </div> -->
+      <div ng-repeat="service in services">
+        <!-- <a class="item item-icon-right" ng-href="{{service.url}}" style="text-decoration: none;">
+          <span>{{ service.caption }}</span>
+          <i class="icon bp-arrow-right"></i>
+        </a> -->
+
+        <div class="item item-icon-right" ng-click="openMarket(service.url)"">
+          <span>{{ service.caption }}</span>
+          <i class="icon bp-arrow-right"></i>
+        </div>
+      </div>
+  </ion-content>
+</ion-view>

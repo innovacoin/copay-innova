@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   id="coin"
+   version="1.1"
+   viewBox="0 0 13.49375 13.49375"
+   height="1"
+   width="1">
+  <defs />
+  <metadata
+     id="coin">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     transform="translate(0,-296.73542)"
+     id="layer1">
+    <path
+       style="clip-rule:evenodd;opacity:1;fill:#2c3e50;fill-opacity:1;fill-rule:nonzero;stroke-width:0.26458329;stroke-linejoin:round;stroke-miterlimit:1.41420996;paint-order:markers stroke fill"
+       d="m 6.746873,310.22917 c 3.730624,0 6.746873,-3.01625 6.746873,-6.74688 0,-3.73062 -3.042708,-6.74687 -6.746873,-6.74687 C 3.042708,296.73542 0,299.75167 0,303.48229 c 0,3.73063 3.016249,6.74688 6.746873,6.74688 z"
+       id="coin" />
+    <g
+       style="fill:#3197a7;fill-opacity:1"
+       id="LINE_40_"
+       transform="matrix(0.0939698,0,0,0.09397154,-9.8094242,240.2468)">
+      <polyline
+         style="fill:#3197a7;fill-opacity:1"
+         id="polyline65"
+         points="176.2,672.9 219.3,672.9 176.2,629.7 176.2,672.9    "
+         class="st1" />
+    </g>
+    <g
+       style="fill:#3197a7;fill-opacity:1"
+       id="LINE_39_"
+       transform="matrix(0.0939698,0,0,0.09397154,-9.8094242,240.2468)">
+      <polyline
+         style="fill:#3197a7;fill-opacity:1"
+         id="polyline68"
+         points="176.2,672.9 133.1,672.9 176.2,716    "
+         class="st1" />
+    </g>
+    <g
+       style="fill:#3197a7;fill-opacity:1"
+       id="LINE_38_"
+       transform="matrix(0.0939698,0,0,0.09397154,-9.8094242,240.2468)">
+      <polygon
+         style="fill:#3197a7;fill-opacity:1"
+         id="polygon71"
+         points="219.3,716 219.3,675 178.4,675 "
+         class="st1" />
+    </g>
+    <g
+       style="fill:#3197a7;fill-opacity:1"
+       id="LINE_37_"
+       transform="matrix(0.0939698,0,0,0.09397154,-9.8094242,240.2468)">
+      <polygon
+         style="fill:#3197a7;fill-opacity:1"
+         id="polygon74"
+         points="133.1,629.7 174,629.7 174,670.7 "
+         class="st1" />
+    </g>
+  </g>
+</svg>
