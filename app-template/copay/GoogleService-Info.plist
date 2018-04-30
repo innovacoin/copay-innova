@@ -7,21 +7,21 @@
 	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
 	<string>ca-app-pub-3940256099942544/4411468910</string>
 	<key>CLIENT_ID</key>
-	<string>552069523319-h7rbf1d0qivtcddotiijvkefadgde05n.apps.googleusercontent.com</string>
+	<string>98274424957-d94akhkm3pmuo60cb8iij8hlno7r7u9e.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.552069523319-h7rbf1d0qivtcddotiijvkefadgde05n</string>
+	<string>com.googleusercontent.apps.98274424957-d94akhkm3pmuo60cb8iij8hlno7r7u9e</string>
 	<key>API_KEY</key>
-	<string>AIzaSyCUqaIlUDCKAWNr66bUwW5AyRR2TkVjy3M</string>
+	<string>AIzaSyCrlkZF6irdRJI2OlGUuJKN1pWuj7tgXTE</string>
 	<key>GCM_SENDER_ID</key>
-	<string>552069523319</string>
+	<string>98274424957</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>info.innovacoin.copay</string>
+	<string>com.innova.copay</string>
 	<key>PROJECT_ID</key>
-	<string>innova-copay</string>
+	<string>innova-ebce5</string>
 	<key>STORAGE_BUCKET</key>
-	<string>innova-copay.appspot.com</string>
+	<string>innova-ebce5.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
 	<true></true>
 	<key>IS_ANALYTICS_ENABLED</key>
@@ -33,8 +33,8 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:552069523319:ios:3b51e44565e5cc9a</string>
+	<string>1:98274424957:ios:13e8540525765b33</string>
 	<key>DATABASE_URL</key>
-	<string>https://innova-copay.firebaseio.com</string>
+	<string>https://innova-ebce5.firebaseio.com</string>
 </dict>
 </plist>
