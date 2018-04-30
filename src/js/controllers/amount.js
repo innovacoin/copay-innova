@@ -19,24 +19,10 @@ angular.module('copayApp.controllers').controller('amountController', function (
 
   var inn_to_usd;
   var inn_to_btc;
-  //$http.get('https://api.coinmarketcap.com/v1/ticker/innova/').then(function (response) {
-    /*var value_object = response.data[0];
+  $http.get('https://api.coinmarketcap.com/v1/ticker/innova/').then(function (response) {
+    var value_object = response.data[0];
     inn_to_usd = parseFloat(value_object.price_usd);
-    inn_to_btc = parseFloat(value_object.price_btc);*/
-  $http.get('https://www.southxchange.com/api/prices').then(function (response) {
-	var data = response.data;
-
-	for (var i = 0; i < data.length; i++){
-	  if (data[i].Market == "INN/BTC"){
-		inn_to_btc = parseFloat(data[i].Last);
-	  }
-	}
-	for (var i = 0; i < data.length; i++){
-	  if (data[i].Market == "BTC/USD"){
-		inn_to_usd = inn_to_btc * parseFloat(data[i].Last);
-	  }
-	}
-  },function (err) {
+    inn_to_btc = parseFloat(value_object.price_btc);},function (err) {
     conosle.log(err);
   });
 

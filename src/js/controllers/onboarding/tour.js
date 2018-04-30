@@ -28,32 +28,16 @@ angular.module('copayApp.controllers').controller('tourController',
         var localCurrency = 'USD';
         var btcAmount = 1;
 
-        // var rate = rateService.toFiat(btcAmount * 1e8, localCurrency, 'btc');
-        // $scope.localCurrencySymbol = '$';
-        // $scope.localCurrencyPerBtc = $filter('formatFiatAmount')(parseFloat(rate.toFixed(2), 10));
+        var rate = rateService.toFiat(btcAmount * 1e8, localCurrency, 'btc');
+        $scope.localCurrencySymbol = '$';
+        $scope.localCurrencyPerBtc = $filter('formatFiatAmount')(parseFloat(rate.toFixed(2), 10));
 
-        /*$http.get('https://api.coinmarketcap.com/v1/ticker/innova/').then(function (response) {
+        $http.get('https://api.coinmarketcap.com/v1/ticker/innova/').then(function (response) {
           var value_object = response.data[0];
 
           $scope.localCurrencySymbol = '$';
-          $scope.localCurrencyPerDin = $filter('formatFiatAmount')(parseFloat(parseFloat(value_object['price_usd']).toFixed(4), 10));*/
-		  $http.get('https://www.southxchange.com/api/prices').then(function (response) {
-			var data = response.data;
-			
-			for (var i = 0; i < data.length; i++){
-			  if (data[i].Market == "INN/BTC"){
-				var inn_to_btc = parseFloat(data[i].Last);
-			  }
-			}
-			for (var i = 0; i < data.length; i++){
-			  if (data[i].Market == "BTC/USD"){
-				var inn_to_usd = inn_to_btc * parseFloat(data[i].Last);
-			  }
-			}
-		  
-		  $scope.localCurrencySymbol = '$';
-          $scope.localCurrencyPerDin = $filter('formatFiatAmount')(parseFloat(inn_to_usd.toFixed(4), 10));
-        },function (err) {
+          $scope.localCurrencyPerDin = $filter('formatFiatAmount')(parseFloat(parseFloat(value_object['price_usd']).toFixed(4), 10));},
+            function (err) {
           conosle.log(err);
         });
 

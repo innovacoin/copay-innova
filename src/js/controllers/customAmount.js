@@ -45,56 +45,18 @@ angular.module('copayApp.controllers').controller('customAmountController', func
         var config = configService.getSync().wallet.settings;
         var amountUnit = txFormatService.satToUnit(parsedAmount.amountSat);
 
-        /*$http.get('https://api.coinmarketcap.com/v1/ticker/innova/').then(function (response) {
+        $http.get('https://api.coinmarketcap.com/v1/ticker/innova/').then(function (response) {
           var value_object = response.data[0];
-          var inn_to_btc = parseFloat(value_object.price_btc);*/
-		  $http.get('https://www.southxchange.com/api/prices').then(function (response) {
-			var data = response.data;
-			
-			for (var i = 0; i < data.length; i++){
-			  if (data[i].Market == "INN/BTC"){
-				var inn_to_btc = parseFloat(data[i].Last);
-			  }
-			}
-			for (var i = 0; i < data.length; i++){
-			  if (data[i].Market == "BTC/USD"){
-				var inn_to_usd = inn_to_btc * parseFloat(data[i].Last);
-			  }
-			}
-	
-            amountUnit = parseFloat(amountUnit / inn_to_btc);
-            
-            // var btcParsedAmount = txFormatService.parseAmount($scope.wallet.coin, amountUnit, $scope.wallet.coin);
-            var btcParsedAmount = txFormatService.parseAmount($scope.coin, amountUnit, 'INN');
-            
-            $scope.amountBtc = btcParsedAmount.amount;
-            $scope.altAmountStr = btcParsedAmount.amountUnitStr.replace('btc','INN');
-
+          var inn_to_usd = parseFloat(value_object.price_usd);
+          var inn_to_btc = parseFloat(value_object.price_btc);
         },function (err) {
           conosle.log(err);
         });
       } else {
-        /*$http.get('https://api.coinmarketcap.com/v1/ticker/innova/').then(function (response) {
+        $http.get('https://api.coinmarketcap.com/v1/ticker/innova/').then(function (response) {
           var value_object = response.data[0];
-          var inn_to_btc = parseFloat(value_object.price_btc);*/
-		  $http.get('https://www.southxchange.com/api/prices').then(function (response) {
-			var data = response.data;
-			
-			for (var i = 0; i < data.length; i++){
-			  if (data[i].Market == "INN/BTC"){
-				inn_to_btc = parseFloat(data[i].Last);
-			  }
-			}
-			for (var i = 0; i < data.length; i++){
-			  if (data[i].Market == "BTC/USD"){
-				inn_to_usd = inn_to_btc * parseFloat(data[i].Last);
-			  }
-			}
-
-            $scope.amountBtc = parseFloat(amount / inn_to_btc);;
-            // $scope.altAmountStr = txFormatService.formatAlternativeStr($scope.wallet.coin, parsedAmount.amountSat);
-
-            $scope.altAmountStr = txFormatService.formatAlternativeStr($scope.coin, parsedAmount.amountSat);
+          var inn_to_usd = parseFloat(value_object.price_usd);
+          var inn_to_btc = parseFloat(value_object.price_btc);
         });
       }
     });
