@@ -3594,8 +3594,8 @@ msgid "{{amountStr}} for Mercado Livre Brazil Gift Card"
 msgstr ""
 
 #: www/views/preferencesBwsUrl.html:21
-msgid "{{appName}} depends on Bitcore Wallet Service (BWS) for blockchain information, networking and Copayer synchronization. The default configuration points to https://bwsapi.innovacoin.info (Innova Dev's public BWS instance)."
-msgstr "{{appName}} hängt von Bitcore Wallet Service (BWS) ab bezüglich Blockchain Informationen, Vernetzung und Copayer Synchronisation. Die Standard Konfiguration verweist auf https://bwsapi.innovacoin.info (Innova Devs öffentlicher BWS Instanz)."
+msgid "{{appName}} depends on Bitcore Wallet Service (BWS) for blockchain information, networking and Copayer synchronization. The default configuration points to https://bws.innovacoin.info (Innova Dev's public BWS instance)."
+msgstr "{{appName}} hängt von Bitcore Wallet Service (BWS) ab bezüglich Blockchain Informationen, Vernetzung und Copayer Synchronisation. Die Standard Konfiguration verweist auf https://bws.innovacoin.info (Innova Devs öffentlicher BWS Instanz)."
 
 #: src/js/controllers/confirm.js:408
 msgid "{{fee}} will be deducted for innova networking fees."
